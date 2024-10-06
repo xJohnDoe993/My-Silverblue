@@ -1,5 +1,5 @@
 # image will be published to ghcr.io/<user>/<name>
-name: Silverblue-Nobara-Kernel
+name: silverblue-nobara-kernel
 # description will be included in the image's metadata
 description: This is my personal OS image.
 
@@ -21,28 +21,31 @@ modules:
     install:
       # - micro
       # - starship
+      - zsh
+      - android-tools
+      - tlp
+      - tlp-rdw
     remove:
-      # example: removing firefox (in favor of the flatpak)
-      # "firefox" is the main package, "firefox-langpacks" is a dependency
-      # - firefox
-      # - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+      - firefox
+      - firefox-langpacks
+      - power-profiles-daemon
+      
+    replace:
+    - from-repo: https://copr.fedorainfracloud.org/coprs/gloriouseggroll/nobara-40/repo/fedora-%OS_VERSIONS%/gloriouseggroll-nobara-40-fedora-%OS_VERSION%.repo 
+      packages:
+      - kernel 
+      - kernel-core 
+      - kernel-modules 
+      - kernel-modules-core 
+      - kernel-modules-extra
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
-      # If no repo information is specified, Flathub will be used by default
-      # repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
-      # repo-name: flathub
-      # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
       install:
-        # - org.mozilla.firefox
-        # - org.gnome.Loupe
-        # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
-      # Flatpak runtimes are not supported (like org.winehq.Wine//stable-23.08),
-      # only normal flatpak applications are (like Floorp Lightning web browser in this example).
-      # Installing different branches of the same Flatpak is not supported.
+        - com.vscodium.codium
+        - io.github.zen_browser.zen
       remove:
-      # - org.gnome.eog
+      # - org.gnome.eo
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
-
