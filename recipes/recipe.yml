@@ -31,7 +31,7 @@ modules:
       - power-profiles-daemon
       
     replace:
-    - from-repo: https://copr.fedorainfracloud.org/coprs/gloriouseggroll/nobara-40/repo/fedora-%OS_VERSIONS%/gloriouseggroll-nobara-40-fedora-%OS_VERSION%.repo 
+    - from-repo: https://copr.fedorainfracloud.org/coprs/gloriouseggroll/nobara-40/repo/fedora-40/gloriouseggroll-nobara-40-fedora-40.repo
       packages:
       - kernel 
       - kernel-core 
