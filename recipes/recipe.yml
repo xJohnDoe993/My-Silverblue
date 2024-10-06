@@ -31,7 +31,8 @@ modules:
       - firefox
       - firefox-langpacks
       - power-profiles-daemon
-
+      - gnome-system-monitor
+      - gnome-extensions
 
     # Use Nobara Kernel
     replace:
@@ -49,6 +50,10 @@ modules:
       install:
         - com.vscodium.codium
         - io.github.zen_browser.zen
+        - io.missioncenter.MissionCenter
+        - com.mattjakeman.ExtensionManager
+        - org.mozilla.Thunderbird
+        - io.github.dvlv.boxbuddyrs
       remove:
       # - org.gnome.eo
 
