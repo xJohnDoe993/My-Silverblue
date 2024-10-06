@@ -32,7 +32,7 @@ modules:
       - firefox-langpacks
       - power-profiles-daemon
       - gnome-system-monitor
-      - gnome-extensions
+      # - gnome-extensions
 
     # Use Nobara Kernel
     replace:
