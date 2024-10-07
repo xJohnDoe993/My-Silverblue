@@ -66,7 +66,7 @@ modules:
       - 1319 #GSConnect
     uninstall:
       - 6 #APPSMENU
-      - 889 #BACKGROUND LOGO
+      #- 889 #BACKGROUND LOGO
 
   - type: systemd
     system:
