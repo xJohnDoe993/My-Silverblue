@@ -32,6 +32,7 @@ modules:
       - firefox-langpacks
       - power-profiles-daemon
       - gnome-system-monitor
+      - gnome-shell-extension-gsconnect 
       # - gnome-extensions
 
     # Use Nobara Kernel
