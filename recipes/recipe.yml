@@ -27,12 +27,13 @@ modules:
       - tlp-rdw
       - distrobox
       - podman
+      - gnome-shell-extension-gsconnect
     remove:
       - firefox
       - firefox-langpacks
       - power-profiles-daemon
       - gnome-system-monitor
-      -  gnome-shell-extension-background-logo
+      - gnome-shell-extension-background-logo
       # - gnome-extensions
 
     # Use Nobara Kernel
@@ -64,7 +65,6 @@ modules:
       - 517 #CAFFEINE
       - 3780 #DDTERM
       - 615 #AppIndicator and KStatusNotifierItem Support
-      - 1319 #GSConnect
     uninstall:
       - 6 #APPSMENU
       #- 889 #BACKGROUND LOGO
