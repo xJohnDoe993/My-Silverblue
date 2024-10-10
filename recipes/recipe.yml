@@ -28,6 +28,7 @@ modules:
       - distrobox
       - podman
       - gnome-shell-extension-gsconnect
+      - tailscale
     remove:
       - firefox
       - firefox-langpacks
@@ -65,6 +66,7 @@ modules:
       - 517 #CAFFEINE
       - 3780 #DDTERM
       - 615 #AppIndicator and KStatusNotifierItem Support
+      - 6139 #Tailscale QS
     uninstall:
       - 6 #APPSMENU
       #- 889 #BACKGROUND LOGO
