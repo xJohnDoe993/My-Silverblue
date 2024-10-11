@@ -29,6 +29,7 @@ modules:
       - podman
       - gnome-shell-extension-gsconnect
       - tailscale
+      - gnome-boxes
     remove:
       - firefox
       - firefox-langpacks
