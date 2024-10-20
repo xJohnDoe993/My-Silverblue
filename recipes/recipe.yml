@@ -44,19 +44,14 @@ modules:
       # - gnome-extensions
 
     # Use Nobara Kernel
-    #replace:
-    #- from-repo: https://copr.fedorainfracloud.org/coprs/gloriouseggroll/nobara-40/repo/fedora-40/gloriouseggroll-nobara-40-fedora-40.repo
-    #  packages:
-    #  - kernel 
-    #  - kernel-core 
-    #  - kernel-modules 
-    #  - kernel-modules-core 
-    #  - kernel-modules-extra
-
     replace:
-    - from-repo: https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos/repo/fedora-40/bieszczaders-kernel-cachyos-fedora-40.repo
+    - from-repo: https://copr.fedorainfracloud.org/coprs/gloriouseggroll/nobara-40/repo/fedora-40/gloriouseggroll-nobara-40-fedora-40.repo
       packages:
-      - kernel-cachyos
+      - kernel 
+      - kernel-core 
+      - kernel-modules 
+      - kernel-modules-core 
+      - kernel-modules-extra
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
