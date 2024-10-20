@@ -68,15 +68,15 @@ modules:
       remove:
       # - org.gnome.eo
 
-  - type: gnome-extensions
-    install:
-      - 307 #DASH TO DOCK
-      - 517 #CAFFEINE
-      - 3780 #DDTERM
-      - 615 #AppIndicator and KStatusNotifierItem Support
-      - 6139 #Tailscale QS
-    uninstall:
-      - 6 #APPSMENU
+  #- type: gnome-extensions
+  #  install:
+  #    - 307 #DASH TO DOCK
+  #    - 517 #CAFFEINE
+  #    - 3780 #DDTERM
+  #    - 615 #AppIndicator and KStatusNotifierItem Support
+  #    - 6139 #Tailscale QS
+  #  uninstall:
+  #    - 6 #APPSMENU
       #- 889 #BACKGROUND LOGO
 
   - type: systemd
