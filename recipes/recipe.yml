@@ -5,7 +5,7 @@ description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/silverblue-main
-image-version: 41 # latest is also supported if you want new updates ASAP
+image-version: 40 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -31,7 +31,7 @@ modules:
     remove:
       - firefox
       - firefox-langpacks
-      # - power-profiles-daemon
+      - power-profiles-daemon
       - gnome-system-monitor
       - gnome-shell-extension-background-logo
       # - kernel 
@@ -43,7 +43,7 @@ modules:
 
     # Use Nobara Kernel
     replace:
-    - from-repo: https://copr.fedorainfracloud.org/coprs/gloriouseggroll/nobara-41/repo/fedora-41/gloriouseggroll-nobara-41-fedora-41.repo
+    - from-repo: https://copr.fedorainfracloud.org/coprs/gloriouseggroll/nobara-40/repo/fedora-40/gloriouseggroll-nobara-40-fedora-40.repo
       packages:
       - kernel 
       - kernel-core 
