@@ -31,7 +31,7 @@ modules:
     remove:
       - firefox
       - firefox-langpacks
-      - power-profiles-daemon
+      # - power-profiles-daemon
       - gnome-system-monitor
       - gnome-shell-extension-background-logo
       # - kernel 
