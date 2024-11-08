@@ -83,7 +83,7 @@ modules:
     install:
       - 307 #DASH TO DOCK
       - 517 #CAFFEINE
-      - 3780 #DDTERM
+      #- 3780 #DDTERM
       - 615 #AppIndicator and KStatusNotifierItem Support
       - 6139 #Tailscale QS
     uninstall:
