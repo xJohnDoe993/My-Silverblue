@@ -5,7 +5,7 @@ description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/silverblue-main
-image-version: 40 # latest is also supported if you want new updates ASAP
+image-version: 41 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -42,14 +42,14 @@ modules:
       # - gnome-extensions
 
     # Use Nobara Kernel
-    replace:
-    - from-repo: https://copr.fedorainfracloud.org/coprs/gloriouseggroll/nobara-40/repo/fedora-40/gloriouseggroll-nobara-40-fedora-40.repo
-      packages:
-      - kernel 
-      - kernel-core 
-      - kernel-modules 
-      - kernel-modules-core 
-      - kernel-modules-extra
+    #replace:
+    #- from-repo: https://copr.fedorainfracloud.org/coprs/gloriouseggroll/nobara-40/repo/fedora-40/gloriouseggroll-nobara-40-fedora-40.repo
+    #  packages:
+    #  - kernel 
+    #  - kernel-core 
+    #  - kernel-modules 
+    #  - kernel-modules-core 
+    #  - kernel-modules-extra
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
@@ -61,6 +61,23 @@ modules:
         - com.mattjakeman.ExtensionManager
         - org.mozilla.Thunderbird
         - io.github.dvlv.boxbuddyrs
+        - com.usebottles.bottles
+        - io.github.bkbilly.lnxlink
+        - io.github.martchus.syncthingtray
+        - io.github.ungoogled_software.ungoogled_chromium
+        - io.github.ungoogled_software.ungoogled_chromium.Codecs
+        - io.missioncenter.MissionCenter
+        - org.gimp.GIMP
+        - org.gnome.Calculator
+        - org.gnome.Calendar
+        - org.gnome.FileRoller
+        - org.gnome.Loupe
+        - org.gnome.Loupe.HEIC
+        - org.gnome.font-viewer
+        - org.inkscape.Inkscape
+        - org.gnome.gedit
+        - org.signal.Signal
+        - org.videolan.VLC
       remove:
       # - org.gnome.eo
 
