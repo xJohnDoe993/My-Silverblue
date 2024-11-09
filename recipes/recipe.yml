@@ -31,7 +31,9 @@ modules:
     remove:
       - firefox
       - firefox-langpacks
-      #- power-profiles-daemon
+      #- power-profiles-daemon #changed from Fedora 41 on to tuned tuned-ppd
+      - tuned 
+      - tuned-ppd
       - gnome-system-monitor
       - gnome-shell-extension-background-logo
       # - kernel 
@@ -96,5 +98,8 @@ modules:
         - tlp.service
         - podman.service
         - tailscaled.service
+      mask:
+        - systemd-rfkill.service 
+        - systemd-rfkill.socket
         
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
