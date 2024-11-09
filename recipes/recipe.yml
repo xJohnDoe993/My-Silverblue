@@ -27,7 +27,7 @@ modules:
       - gnome-shell-extension-gsconnect
       - tailscale
       - gnome-boxes
-      - https://repo.linrunner.de/fedora/tlp/repos/releases/tlp-release.fc41.noarch.rpm
+      - https://repo.linrunner.de/fedora/tlp/repos/releases/tlp-release.fc%OS_VERSION%.noarch.rpm
     remove:
       - firefox
       - firefox-langpacks
