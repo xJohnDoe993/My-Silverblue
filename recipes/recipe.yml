@@ -21,13 +21,13 @@ modules:
     install:
       - zsh
       - android-tools
-      - tlp
       - tlp-rdw
       - distrobox
       - podman
       - gnome-shell-extension-gsconnect
       - tailscale
       - gnome-boxes
+      - https://repo.linrunner.de/fedora/tlp/repos/releases/tlp-release.fc$(rpm -E %fedora).noarch.rpm
     remove:
       - firefox
       - firefox-langpacks
