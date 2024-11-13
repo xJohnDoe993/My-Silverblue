@@ -29,7 +29,12 @@ modules:
       - tailscale
       - gnome-boxes
       - https://repo.linrunner.de/fedora/tlp/repos/releases/tlp-release.fc%OS_VERSION%.noarch.rpm
-      - kernel-cachyos-6.11.6-cb2.0.fc41.x86_64.rpm
+    # - kernel-cachyos
+      - https://download.copr.fedorainfracloud.org/results/bieszczaders/kernel-cachyos/fedora-41-x86_64/08203499-kernel-cachyos/kernel-cachyos-6.11.6-cb2.0.fc41.x86_64.rpm
+      - https://download.copr.fedorainfracloud.org/results/bieszczaders/kernel-cachyos/fedora-41-x86_64/08203499-kernel-cachyos/kernel-cachyos-core-6.11.6-cb2.0.fc41.x86_64.rpm
+      - https://download.copr.fedorainfracloud.org/results/bieszczaders/kernel-cachyos/fedora-41-x86_64/08203499-kernel-cachyos/kernel-cachyos-devel-6.11.6-cb2.0.fc41.x86_64.rpm
+      - https://download.copr.fedorainfracloud.org/results/bieszczaders/kernel-cachyos/fedora-41-x86_64/08203499-kernel-cachyos/kernel-cachyos-headers-6.11.6-cb2.0.fc41.x86_64.rpm
+      - https://download.copr.fedorainfracloud.org/results/bieszczaders/kernel-cachyos/fedora-41-x86_64/08203499-kernel-cachyos/kernel-cachyos-modules-6.11.6-cb2.0.fc41.x86_64.rpm
     remove:
       - firefox
       - firefox-langpacks
