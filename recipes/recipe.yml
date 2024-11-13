@@ -29,7 +29,7 @@ modules:
       - tailscale
       - gnome-boxes
       - https://repo.linrunner.de/fedora/tlp/repos/releases/tlp-release.fc%OS_VERSION%.noarch.rpm
-      - kernel-cachyos
+      - kernel-cachyos-6.11.6-cb2.0.fc41.x86_64.rpm
     remove:
       - firefox
       - firefox-langpacks
