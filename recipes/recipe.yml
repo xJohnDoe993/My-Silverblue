@@ -100,5 +100,8 @@ modules:
       mask:
         - systemd-rfkill.service 
         - systemd-rfkill.socket
+  - type: script
+    snippets:
+      - "dracut --force --regenerate-all" 
         
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
